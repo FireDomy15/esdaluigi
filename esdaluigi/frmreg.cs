@@ -21,5 +21,14 @@ namespace esdaluigi
         {
 
         }
+
+        private void cmdconferma_Click(object sender, EventArgs e)
+        {
+            /* IMPLEMENTARE CONFERMA DI REGISTRAZIONE + CONTROLLI DI CAMPI E CAZZI VARI*/
+            /*CREARE NUOVO CODICE CARRELLO*/
+            frmcarrello1 VUOTO = new frmcarrello1();
+            VUOTO.Show();
+            this.Hide();
+        }
     }
 }

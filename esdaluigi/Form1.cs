@@ -26,5 +26,12 @@ namespace esdaluigi
         {
 
         }
+
+        private void linkreg_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmreg FRMREG = new frmreg();
+            FRMREG.Show();
+            this.Hide();
+        }
     }
 }

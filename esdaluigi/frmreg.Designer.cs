@@ -40,6 +40,7 @@ namespace esdaluigi
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.txtconfermapass = new System.Windows.Forms.TextBox();
+            this.cmdconferma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -155,11 +156,22 @@ namespace esdaluigi
             this.txtconfermapass.Size = new System.Drawing.Size(244, 50);
             this.txtconfermapass.TabIndex = 13;
             // 
+            // cmdconferma
+            // 
+            this.cmdconferma.Location = new System.Drawing.Point(678, 533);
+            this.cmdconferma.Name = "cmdconferma";
+            this.cmdconferma.Size = new System.Drawing.Size(116, 23);
+            this.cmdconferma.TabIndex = 14;
+            this.cmdconferma.Text = "CONFERMA";
+            this.cmdconferma.UseVisualStyleBackColor = true;
+            this.cmdconferma.Click += new System.EventHandler(this.cmdconferma_Click);
+            // 
             // frmreg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1573, 609);
+            this.ClientSize = new System.Drawing.Size(1364, 609);
+            this.Controls.Add(this.cmdconferma);
             this.Controls.Add(this.txtconfermapass);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
@@ -191,5 +203,6 @@ namespace esdaluigi
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.TextBox txtconfermapass;
+        private System.Windows.Forms.Button cmdconferma;
     }
 }
