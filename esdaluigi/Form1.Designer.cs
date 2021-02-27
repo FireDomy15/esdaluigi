@@ -32,7 +32,7 @@ namespace esdaluigi
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.linkreg = new System.Windows.Forms.LinkLabel();
@@ -76,15 +76,15 @@ namespace esdaluigi
             this.label3.Text = "Username";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtnome
+            // txtusername
             // 
-            this.txtnome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtnome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtnome.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.Location = new System.Drawing.Point(668, 145);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(280, 56);
-            this.txtnome.TabIndex = 3;
+            this.txtusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtusername.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(668, 145);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(280, 56);
+            this.txtusername.TabIndex = 3;
             // 
             // txtpass
             // 
@@ -132,6 +132,7 @@ namespace esdaluigi
             this.cmdaccedi.TabIndex = 8;
             this.cmdaccedi.Text = "&ACCEDI";
             this.cmdaccedi.UseVisualStyleBackColor = false;
+            this.cmdaccedi.Click += new System.EventHandler(this.cmdaccedi_Click);
             // 
             // frmbenvenuto
             // 
@@ -142,7 +143,7 @@ namespace esdaluigi
             this.Controls.Add(this.linkreg);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtpass);
-            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -158,7 +159,7 @@ namespace esdaluigi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkreg;

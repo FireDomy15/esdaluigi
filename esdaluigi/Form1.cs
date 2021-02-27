@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
 
 namespace esdaluigi
 {
@@ -32,6 +35,20 @@ namespace esdaluigi
             frmreg FRMREG = new frmreg();
             FRMREG.Show();
             this.Hide();
+        }
+
+        private void cmdaccedi_Click(object sender, EventArgs e)
+        {
+            string json = File.ReadAllText("Utenti.txt");
+            List<User> users = JsonSerializer.Deserialize<List<User>>(json);
+
+           User utente = users.Find(x => x.username == txtusername.Text);
+            if (utente?.password == txtpass.Text) // "?" = if(variabile !=null)
+            {
+                //LOGIN
+            }
+            else
+                MessageBox.Show("CREDENZIALI ERRATE!");
         }
     }
 }
