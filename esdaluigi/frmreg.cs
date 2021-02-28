@@ -27,9 +27,6 @@ namespace esdaluigi
 
         private void cmdconferma_Click(object sender, EventArgs e)
         {
-            /* IMPLEMENTARE CONFERMA DI REGISTRAZIONE + CONTROLLI DI CAMPI E CAZZI VARI*/
-            /*CREARE NUOVO CODICE CARRELLO*/
-
             string json = File.ReadAllText("Utenti.txt");
             List <User> users = JsonSerializer.Deserialize<List<User>>(json);
 
@@ -38,7 +35,6 @@ namespace esdaluigi
                 MessageBox.Show("SEI GIA' REGISTRATO!");
                 return;
             }
-
             User utente = new User(txtusername.Text, txtpassword.Text, txtnome.Text, txtcognome.Text);
             users.Add(utente);
             string jsonString = JsonSerializer.Serialize(users);
@@ -48,5 +44,11 @@ namespace esdaluigi
             VUOTO.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmbenvenuto LOGIN = new frmbenvenuto();
+            LOGIN.Show();
+            this.Hide();
     }
 }

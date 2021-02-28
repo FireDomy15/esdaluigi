@@ -45,7 +45,9 @@ namespace esdaluigi
            User utente = users.Find(x => x.username == txtusername.Text);
             if (utente?.password == txtpass.Text) // "?" = if(variabile !=null)
             {
-                //LOGIN
+                frmcarrello2 FRMCART = new frmcarrello2();
+                FRMCART.Show();
+                this.Close();
             }
             else
                 MessageBox.Show("CREDENZIALI ERRATE!");
