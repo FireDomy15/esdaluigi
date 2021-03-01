@@ -110,12 +110,13 @@ namespace esdaluigi
             this.cmdins.TabIndex = 11;
             this.cmdins.Text = "&INSERISCI NEL CARRELLO";
             this.cmdins.UseVisualStyleBackColor = false;
+            this.cmdins.Click += new System.EventHandler(this.cmdins_Click);
             // 
             // frmprodotti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1581, 648);
+            this.ClientSize = new System.Drawing.Size(1370, 648);
             this.Controls.Add(this.cmdins);
             this.Controls.Add(this.txtprezzo);
             this.Controls.Add(this.txtdesc);
