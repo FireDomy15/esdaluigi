@@ -114,7 +114,7 @@ namespace esdaluigi
             this.linkreg.AutoSize = true;
             this.linkreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkreg.LinkColor = System.Drawing.Color.Blue;
-            this.linkreg.Location = new System.Drawing.Point(455, 435);
+            this.linkreg.Location = new System.Drawing.Point(462, 437);
             this.linkreg.Name = "linkreg";
             this.linkreg.Size = new System.Drawing.Size(332, 33);
             this.linkreg.TabIndex = 7;
