@@ -106,22 +106,12 @@ namespace esdaluigi
             // 
             // txtquant
             // 
-            this.txtcod.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtcod.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcod.Location = new System.Drawing.Point(868, 57);
-            this.txtcod.Name = "txtcod";
-            this.txtcod.Size = new System.Drawing.Size(244, 50);
-            this.txtcod.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(504, 206);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(680, 247);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "MODIFICARE";
+            this.txtquant.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtquant.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtquant.Location = new System.Drawing.Point(586, 72);
+            this.txtquant.Name = "txtquant";
+            this.txtquant.Size = new System.Drawing.Size(244, 50);
+            this.txtquant.TabIndex = 7;
             // 
             // frmprodotti
             // 
