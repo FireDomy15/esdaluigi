@@ -22,6 +22,9 @@ namespace esdaluigi
 
         }
 
-       
+        private void cmdins_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
