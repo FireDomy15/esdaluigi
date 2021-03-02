@@ -16,5 +16,10 @@ namespace esdaluigi
         {
             InitializeComponent();
         }
+
+        private void cmdaggiungi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

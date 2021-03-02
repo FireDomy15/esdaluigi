@@ -56,6 +56,7 @@ namespace esdaluigi
             this.cmdaggiungi.TabIndex = 1;
             this.cmdaggiungi.Text = "AG&GIUNGI PRODOTTI";
             this.cmdaggiungi.UseVisualStyleBackColor = false;
+            this.cmdaggiungi.Click += new System.EventHandler(this.cmdaggiungi_Click);
             // 
             // frmcarrello1
             // 
