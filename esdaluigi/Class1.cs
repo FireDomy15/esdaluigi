@@ -20,5 +20,21 @@ namespace esdaluigi
             this.nome = nome;
             this.cognome = cognome;
         }
+        
     }
+    class prodotti
+    {
+        public static int n;
+
+        public struct rec_prodotti
+        {
+            public string nome;
+            public int quantita;
+            public double prezzo;
+            public double sconto;
+            public string codice;
+            public string descrizione;
+        }
+    }
+}
 }

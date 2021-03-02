@@ -117,7 +117,7 @@ namespace esdaluigi
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(504, 206);
+            this.label4.Location = new System.Drawing.Point(-35, 401);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(680, 247);
             this.label4.TabIndex = 12;
