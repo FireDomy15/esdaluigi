@@ -110,11 +110,6 @@ namespace esdaluigi
             // 
             // txtquant
             // 
-<<<<<<< HEAD
-            this.txtquant.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtquant.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtquant.Location = new System.Drawing.Point(586, 72);
-=======
             this.txtquant.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtquant.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtquant.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -124,7 +119,6 @@ namespace esdaluigi
             0,
             0,
             0});
->>>>>>> 4f31802ba16aa64469b0eee4b72703846e8cab01
             this.txtquant.Name = "txtquant";
             this.txtquant.Size = new System.Drawing.Size(244, 50);
             this.txtquant.TabIndex = 7;

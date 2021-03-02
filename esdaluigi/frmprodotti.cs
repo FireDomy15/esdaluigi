@@ -45,17 +45,5 @@ namespace esdaluigi
             this.Close();
         }
 
-<<<<<<< HEAD
-=======
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
->>>>>>> 4f31802ba16aa64469b0eee4b72703846e8cab01
     }
 }
