@@ -32,9 +32,8 @@ namespace esdaluigi
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.linkreg = new System.Windows.Forms.LinkLabel();
             this.cmdaccedi = new System.Windows.Forms.Button();
@@ -77,15 +76,15 @@ namespace esdaluigi
             this.label3.Text = "Username";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtnome
+            // txtusername
             // 
-            this.txtnome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtnome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtnome.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.Location = new System.Drawing.Point(668, 145);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(280, 56);
-            this.txtnome.TabIndex = 3;
+            this.txtusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtusername.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(668, 145);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(280, 56);
+            this.txtusername.TabIndex = 3;
             // 
             // txtpass
             // 
@@ -94,21 +93,9 @@ namespace esdaluigi
             this.txtpass.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass.Location = new System.Drawing.Point(668, 240);
             this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
             this.txtpass.Size = new System.Drawing.Size(280, 56);
             this.txtpass.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(455, 447);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(332, 30);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Clicca qui per registrarti.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -127,12 +114,13 @@ namespace esdaluigi
             this.linkreg.AutoSize = true;
             this.linkreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkreg.LinkColor = System.Drawing.Color.Blue;
-            this.linkreg.Location = new System.Drawing.Point(508, 527);
+            this.linkreg.Location = new System.Drawing.Point(462, 437);
             this.linkreg.Name = "linkreg";
-            this.linkreg.Size = new System.Drawing.Size(228, 33);
+            this.linkreg.Size = new System.Drawing.Size(332, 33);
             this.linkreg.TabIndex = 7;
             this.linkreg.TabStop = true;
-            this.linkreg.Text = "linkregistrazione";
+            this.linkreg.Text = "Clicca quì per registrarti!";
+            this.linkreg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkreg_LinkClicked);
             // 
             // cmdaccedi
             // 
@@ -145,18 +133,18 @@ namespace esdaluigi
             this.cmdaccedi.TabIndex = 8;
             this.cmdaccedi.Text = "&ACCEDI";
             this.cmdaccedi.UseVisualStyleBackColor = false;
+            this.cmdaccedi.Click += new System.EventHandler(this.cmdaccedi_Click);
             // 
             // frmbenvenuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1433, 683);
+            this.ClientSize = new System.Drawing.Size(1364, 683);
             this.Controls.Add(this.cmdaccedi);
             this.Controls.Add(this.linkreg);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtpass);
-            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -172,9 +160,8 @@ namespace esdaluigi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtpass;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkreg;
         private System.Windows.Forms.Button cmdaccedi;
