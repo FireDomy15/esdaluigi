@@ -37,8 +37,10 @@ namespace esdaluigi
             this.cmdaggiungi = new System.Windows.Forms.Button();
             this.cmdelimina = new System.Windows.Forms.Button();
             this.cmdtot = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbltot = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblnome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@ namespace esdaluigi
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(105, 71);
+            this.label3.Location = new System.Drawing.Point(110, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 40);
             this.label3.TabIndex = 2;
@@ -136,23 +138,23 @@ namespace esdaluigi
             this.cmdtot.Text = "&CALCOLA TOTALE";
             this.cmdtot.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lbltot
             // 
-            this.label4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(1270, 508);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 98);
-            this.label4.TabIndex = 11;
+            this.lbltot.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lbltot.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbltot.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltot.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbltot.Location = new System.Drawing.Point(1270, 508);
+            this.lbltot.Name = "lbltot";
+            this.lbltot.Size = new System.Drawing.Size(227, 98);
+            this.lbltot.TabIndex = 11;
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.numericUpDown1.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.numericUpDown1.Location = new System.Drawing.Point(566, 74);
+            this.numericUpDown1.Location = new System.Drawing.Point(571, 84);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
@@ -168,14 +170,37 @@ namespace esdaluigi
             0,
             0});
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label4.Location = new System.Drawing.Point(143, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(257, 40);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Nome prodotto";
+            // 
+            // lblnome
+            // 
+            this.lblnome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.lblnome.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblnome.Location = new System.Drawing.Point(570, 20);
+            this.lblnome.Name = "lblnome";
+            this.lblnome.Size = new System.Drawing.Size(273, 40);
+            this.lblnome.TabIndex = 14;
+            // 
             // frmcarrello2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1550, 644);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lblnome);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lbltot);
             this.Controls.Add(this.cmdtot);
             this.Controls.Add(this.cmdelimina);
             this.Controls.Add(this.cmdaggiungi);
@@ -202,7 +227,9 @@ namespace esdaluigi
         private System.Windows.Forms.Button cmdaggiungi;
         private System.Windows.Forms.Button cmdelimina;
         private System.Windows.Forms.Button cmdtot;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbltot;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblnome;
     }
 }
