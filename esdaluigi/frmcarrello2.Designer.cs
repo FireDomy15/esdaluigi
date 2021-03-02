@@ -41,6 +41,8 @@ namespace esdaluigi
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.lblnome = new System.Windows.Forms.Label();
+            this.cmdindietro = new System.Windows.Forms.Button();
+            this.cmdavanti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +51,7 @@ namespace esdaluigi
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(110, 159);
+            this.label2.Location = new System.Drawing.Point(132, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(268, 40);
             this.label2.TabIndex = 1;
@@ -72,11 +74,12 @@ namespace esdaluigi
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(28, 244);
+            this.label1.Location = new System.Drawing.Point(50, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(350, 40);
             this.label1.TabIndex = 3;
             this.label1.Text = "Descrizione Prodotto";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbldesc
             // 
@@ -191,12 +194,41 @@ namespace esdaluigi
             this.lblnome.Size = new System.Drawing.Size(273, 40);
             this.lblnome.TabIndex = 14;
             // 
+            // cmdindietro
+            // 
+            this.cmdindietro.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cmdindietro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cmdindietro.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdindietro.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cmdindietro.Location = new System.Drawing.Point(896, 419);
+            this.cmdindietro.Name = "cmdindietro";
+            this.cmdindietro.Size = new System.Drawing.Size(140, 66);
+            this.cmdindietro.TabIndex = 15;
+            this.cmdindietro.Text = "<--";
+            this.cmdindietro.UseVisualStyleBackColor = false;
+            this.cmdindietro.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cmdavanti
+            // 
+            this.cmdavanti.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cmdavanti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cmdavanti.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdavanti.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cmdavanti.Location = new System.Drawing.Point(1042, 419);
+            this.cmdavanti.Name = "cmdavanti";
+            this.cmdavanti.Size = new System.Drawing.Size(134, 64);
+            this.cmdavanti.TabIndex = 16;
+            this.cmdavanti.Text = "-->";
+            this.cmdavanti.UseVisualStyleBackColor = false;
+            // 
             // frmcarrello2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1550, 644);
+            this.Controls.Add(this.cmdavanti);
+            this.Controls.Add(this.cmdindietro);
             this.Controls.Add(this.lblnome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.numericUpDown1);
@@ -231,5 +263,7 @@ namespace esdaluigi
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblnome;
+        private System.Windows.Forms.Button cmdindietro;
+        private System.Windows.Forms.Button cmdavanti;
     }
 }
