@@ -31,9 +31,8 @@ namespace esdaluigi
                     if (prodotti.nome == cboprodotto.text)
                     {
                         prodotti.n += 1;
-                        struttura.quantita = Convert.ToInt32(txtquant.text);
+                        struttura.quantita = Convert.ToInt32(txtquant.Value);
                         struttura.prezzo = Convert.ToInt32(txtprezzo.Text);
-                        struttura.codice = txtcod.Text;
                         struttura.descrizione = txtdesc.Text;
                     }
                     else
