@@ -60,9 +60,10 @@ namespace esdaluigi
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label3.Location = new System.Drawing.Point(105, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(273, 40);
+            this.label3.Size = new System.Drawing.Size(290, 40);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Codice prodotto";
+            this.label3.Text = "Numero prodotto";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -82,7 +83,7 @@ namespace esdaluigi
             this.lbldesc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbldesc.Location = new System.Drawing.Point(565, 244);
             this.lbldesc.Name = "lbldesc";
-            this.lbldesc.Size = new System.Drawing.Size(273, 40);
+            this.lbldesc.Size = new System.Drawing.Size(273, 239);
             this.lbldesc.TabIndex = 5;
             // 
             // lblprezzo
@@ -94,13 +95,14 @@ namespace esdaluigi
             this.lblprezzo.Name = "lblprezzo";
             this.lblprezzo.Size = new System.Drawing.Size(273, 40);
             this.lblprezzo.TabIndex = 6;
+            this.lblprezzo.Click += new System.EventHandler(this.lblprezzo_Click);
             // 
             // cmdaggiungi
             // 
             this.cmdaggiungi.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cmdaggiungi.Font = new System.Drawing.Font("Mongolian Baiti", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdaggiungi.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.cmdaggiungi.Location = new System.Drawing.Point(342, 370);
+            this.cmdaggiungi.Location = new System.Drawing.Point(329, 508);
             this.cmdaggiungi.Name = "cmdaggiungi";
             this.cmdaggiungi.Size = new System.Drawing.Size(255, 88);
             this.cmdaggiungi.TabIndex = 7;
@@ -119,6 +121,7 @@ namespace esdaluigi
             this.cmdelimina.TabIndex = 9;
             this.cmdelimina.Text = "&ELIMINA PRODOTTO";
             this.cmdelimina.UseVisualStyleBackColor = false;
+            this.cmdelimina.Click += new System.EventHandler(this.cmdelimina_Click);
             // 
             // cmdtot
             // 
@@ -170,7 +173,7 @@ namespace esdaluigi
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1364, 644);
+            this.ClientSize = new System.Drawing.Size(1550, 644);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmdtot);
