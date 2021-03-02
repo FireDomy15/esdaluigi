@@ -24,7 +24,8 @@ namespace esdaluigi
 
         private void cmdins_Click(object sender, EventArgs e)
         {
-
+            frmcarrello2 pieno = new frmcarrello2();
+            this.Close();
         }
     }
 }

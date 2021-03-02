@@ -32,10 +32,11 @@ namespace esdaluigi
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtcod = new System.Windows.Forms.TextBox();
+            this.cmdins = new System.Windows.Forms.Button();
             this.txtdesc = new System.Windows.Forms.TextBox();
             this.txtprezzo = new System.Windows.Forms.TextBox();
-            this.cmdins = new System.Windows.Forms.Button();
+            this.txtcod = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -72,14 +73,18 @@ namespace esdaluigi
             this.label2.TabIndex = 4;
             this.label2.Text = "Prezzo prodotto";
             // 
-            // txtcod
+            // cmdins
             // 
-            this.txtcod.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtcod.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcod.Location = new System.Drawing.Point(868, 57);
-            this.txtcod.Name = "txtcod";
-            this.txtcod.Size = new System.Drawing.Size(244, 50);
-            this.txtcod.TabIndex = 7;
+            this.cmdins.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cmdins.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdins.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cmdins.Location = new System.Drawing.Point(664, 456);
+            this.cmdins.Name = "cmdins";
+            this.cmdins.Size = new System.Drawing.Size(266, 88);
+            this.cmdins.TabIndex = 11;
+            this.cmdins.Text = "&INSERISCI NEL CARRELLO";
+            this.cmdins.UseVisualStyleBackColor = false;
+            this.cmdins.Click += new System.EventHandler(this.cmdins_Click);
             // 
             // txtdesc
             // 
@@ -99,24 +104,31 @@ namespace esdaluigi
             this.txtprezzo.Size = new System.Drawing.Size(244, 50);
             this.txtprezzo.TabIndex = 9;
             // 
-            // cmdins
+            // txtcod
             // 
-            this.cmdins.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cmdins.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdins.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.cmdins.Location = new System.Drawing.Point(664, 456);
-            this.cmdins.Name = "cmdins";
-            this.cmdins.Size = new System.Drawing.Size(266, 88);
-            this.cmdins.TabIndex = 11;
-            this.cmdins.Text = "&INSERISCI NEL CARRELLO";
-            this.cmdins.UseVisualStyleBackColor = false;
-            this.cmdins.Click += new System.EventHandler(this.cmdins_Click);
+            this.txtcod.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtcod.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcod.Location = new System.Drawing.Point(868, 57);
+            this.txtcod.Name = "txtcod";
+            this.txtcod.Size = new System.Drawing.Size(244, 50);
+            this.txtcod.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(504, 206);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(680, 247);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "MODIFICARE";
             // 
             // frmprodotti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 648);
+            this.ClientSize = new System.Drawing.Size(1364, 648);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.cmdins);
             this.Controls.Add(this.txtprezzo);
             this.Controls.Add(this.txtdesc);
@@ -136,9 +148,10 @@ namespace esdaluigi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtcod;
+        private System.Windows.Forms.Button cmdins;
         private System.Windows.Forms.TextBox txtdesc;
         private System.Windows.Forms.TextBox txtprezzo;
-        private System.Windows.Forms.Button cmdins;
+        private System.Windows.Forms.TextBox txtcod;
+        private System.Windows.Forms.Label label4;
     }
 }

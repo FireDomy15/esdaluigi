@@ -19,7 +19,8 @@ namespace esdaluigi
 
         private void cmdaggiungi_Click(object sender, EventArgs e)
         {
-
+            frmprodotti AGGIUNGI = new frmprodotti();
+            this.Close();
         }
     }
 }
