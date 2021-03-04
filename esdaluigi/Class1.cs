@@ -22,7 +22,21 @@ namespace esdaluigi
         }
         
     }
-    class prodotti
+
+    class prodotto
+    {
+        public string nome;
+        public double prezzo;
+        public string descrizione;
+    
+        public prodotto(string nome, double prezzo, string descrizione)
+        {
+            this.nome = nome;
+            this.prezzo = prezzo;
+            this.descrizione = descrizione;
+        }
+    }
+    /*class prodotti
     {
         public static int n;
 
@@ -35,6 +49,6 @@ namespace esdaluigi
             public string codice;
             public string descrizione;
         }
-    }
+    }*/
 }
 }
