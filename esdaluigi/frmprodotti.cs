@@ -26,9 +26,9 @@ namespace esdaluigi
         {
             prodotti.rec_prodotti struttura = new prodotti.rec_prodotti();
                 int i = 0;
-                while (i < prodotti.n || struttura.nome != cboprodotto.text)
+                while (i < prodotti.n || struttura.nome != txtnome.Text)
                 {
-                    if (prodotti.nome == cboprodotto.text)
+                    if (struttura.nome == txtnome.Text)
                     {
                         prodotti.n += 1;
                         struttura.quantita = Convert.ToInt32(txtquant.Value);
@@ -45,5 +45,14 @@ namespace esdaluigi
             this.Close();
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
