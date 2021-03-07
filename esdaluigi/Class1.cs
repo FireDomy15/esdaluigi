@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
 
 namespace esdaluigi
 {
@@ -21,8 +24,7 @@ namespace esdaluigi
             this.nome = nome;
             this.cognome = cognome;
             this.carrello = carrello;
-        }
-        
+        }   
     }
 
     class Prodotto
@@ -51,18 +53,26 @@ namespace esdaluigi
         }
     }
 
-    /*class prodotti
+    class Easycart
     {
-        public static int n;
-
-        public struct rec_prodotti
+        public static int currentUserIndex = NO_USER;
+        public static List<Prodotto> listino = new List<Prodotto>();
+        public static List<User> utenti = new List<User>();
+        public const string USERS_PATH = "Utenti.txt"; // COSTANTE
+        public const string PRODUCTS_PATH = "Prodotti.txt"; // COSTANTE
+        public const int NO_USER = -1;
+        public static User currentUser()
         {
-            public string nome;
-            public int quantita;
-            public double prezzo;
-            public double sconto;
-            public string codice;
-            public string descrizione;
+            return utenti[currentUserIndex];
         }
-    }*/
+
+        public static void save()
+        {
+            string jsonString = JsonSerializer.Serialize(utenti);
+            File.WriteAllText(USERS_PATH, jsonString);
+        }
+
+        // NON SI INIZIALIZZA IL COSTRUTTORE PERCHE'
+        // LA CLASSE E' STATICA
+    }
 }

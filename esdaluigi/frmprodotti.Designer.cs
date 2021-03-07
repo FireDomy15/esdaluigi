@@ -33,11 +33,11 @@ namespace esdaluigi
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmdins = new System.Windows.Forms.Button();
-            this.txtdesc = new System.Windows.Forms.TextBox();
-            this.txtprezzo = new System.Windows.Forms.TextBox();
             this.txtquant = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtnome = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtprezzo = new System.Windows.Forms.Label();
+            this.txtdesc = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtquant)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,24 +90,6 @@ namespace esdaluigi
             this.cmdins.UseVisualStyleBackColor = false;
             this.cmdins.Click += new System.EventHandler(this.cmdins_Click);
             // 
-            // txtdesc
-            // 
-            this.txtdesc.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtdesc.Font = new System.Drawing.Font("Mongolian Baiti", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdesc.Location = new System.Drawing.Point(586, 313);
-            this.txtdesc.Name = "txtdesc";
-            this.txtdesc.Size = new System.Drawing.Size(244, 118);
-            this.txtdesc.TabIndex = 8;
-            // 
-            // txtprezzo
-            // 
-            this.txtprezzo.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtprezzo.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtprezzo.Location = new System.Drawing.Point(586, 202);
-            this.txtprezzo.Name = "txtprezzo";
-            this.txtprezzo.Size = new System.Drawing.Size(244, 50);
-            this.txtprezzo.TabIndex = 9;
-            // 
             // txtquant
             // 
             this.txtquant.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -120,8 +102,13 @@ namespace esdaluigi
             0,
             0});
             this.txtquant.Name = "txtquant";
-            this.txtquant.Size = new System.Drawing.Size(244, 50);
+            this.txtquant.Size = new System.Drawing.Size(244, 41);
             this.txtquant.TabIndex = 7;
+            this.txtquant.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label4
             // 
@@ -134,31 +121,48 @@ namespace esdaluigi
             this.label4.TabIndex = 14;
             this.label4.Text = "Nome prodotto";
             // 
-            // txtnome
+            // comboBox1
             // 
-            this.txtnome.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtnome.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.Location = new System.Drawing.Point(586, 31);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(244, 50);
-            this.txtnome.TabIndex = 15;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(631, 46);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 15;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // txtprezzo
+            // 
+            this.txtprezzo.Location = new System.Drawing.Point(583, 222);
+            this.txtprezzo.Name = "txtprezzo";
+            this.txtprezzo.Size = new System.Drawing.Size(247, 23);
+            this.txtprezzo.TabIndex = 16;
+            this.txtprezzo.Text = "label5";
+            // 
+            // txtdesc
+            // 
+            this.txtdesc.Location = new System.Drawing.Point(583, 303);
+            this.txtdesc.Name = "txtdesc";
+            this.txtdesc.Size = new System.Drawing.Size(225, 60);
+            this.txtdesc.TabIndex = 17;
+            this.txtdesc.Text = "label6";
             // 
             // frmprodotti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 648);
-            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtdesc);
+            this.Controls.Add(this.txtprezzo);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtquant);
             this.Controls.Add(this.cmdins);
-            this.Controls.Add(this.txtprezzo);
-            this.Controls.Add(this.txtdesc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "frmprodotti";
             this.Text = "Inserimento Prodotti";
+            this.Load += new System.EventHandler(this.frmprodotti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtquant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -171,10 +175,10 @@ namespace esdaluigi
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cmdins;
-        private System.Windows.Forms.TextBox txtdesc;
-        private System.Windows.Forms.TextBox txtprezzo;
         private System.Windows.Forms.NumericUpDown txtquant;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label txtprezzo;
+        private System.Windows.Forms.Label txtdesc;
     }
 }

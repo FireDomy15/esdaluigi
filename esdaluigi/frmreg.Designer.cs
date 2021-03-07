@@ -168,6 +168,7 @@ namespace esdaluigi
             this.cmdconferma.TabIndex = 16;
             this.cmdconferma.Text = "&CONFERMA";
             this.cmdconferma.UseVisualStyleBackColor = false;
+            this.cmdconferma.Click += new System.EventHandler(this.cmdconferma_Click);
             // 
             // cmdback
             // 

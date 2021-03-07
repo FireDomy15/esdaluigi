@@ -36,13 +36,19 @@ namespace esdaluigi
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmbenvenuto FRMBEN = new frmbenvenuto();
-            FRMBEN.Hide();
+            Easycart.currentUserIndex = Easycart.NO_USER;
+            FRMBEN.Show();
             this.Hide();
         }
 
         private void chiudiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

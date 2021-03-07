@@ -42,12 +42,14 @@ namespace esdaluigi
             string json = File.ReadAllText("Utenti.txt");
             List<User> users = JsonSerializer.Deserialize<List<User>>(json);
 
-           User utente = users.Find(x => x.username == txtusername.Text);
-            if (utente?.password == txtpass.Text) // "?" = if(variabile !=null)
+            int userIndex = users.FindIndex(x => x.username == txtusername.Text);
+            if (userIndex != -1 &&
+               Easycart.utenti[userIndex].password == txtpass.Text)
             {
                 frmcarrello2 FRMCART = new frmcarrello2();
+                Easycart.currentUserIndex = userIndex;
                 FRMCART.Show();
-                this.Close();
+                this.Hide();
             }
             else
                 MessageBox.Show("CREDENZIALI ERRATE!");
