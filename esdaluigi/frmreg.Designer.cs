@@ -123,7 +123,7 @@ namespace esdaluigi
             this.txtnome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtnome.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnome.Location = new System.Drawing.Point(1549, 208);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(6);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(484, 93);
             this.txtnome.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace esdaluigi
             this.txtcognome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtcognome.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcognome.Location = new System.Drawing.Point(1549, 369);
-            this.txtcognome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtcognome.Margin = new System.Windows.Forms.Padding(6);
             this.txtcognome.Name = "txtcognome";
             this.txtcognome.Size = new System.Drawing.Size(484, 93);
             this.txtcognome.TabIndex = 10;
@@ -143,7 +143,7 @@ namespace esdaluigi
             this.txtusername.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtusername.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusername.Location = new System.Drawing.Point(1549, 521);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(6);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(484, 93);
             this.txtusername.TabIndex = 11;
@@ -153,9 +153,8 @@ namespace esdaluigi
             this.txtpassword.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtpassword.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.Location = new System.Drawing.Point(1549, 671);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(6);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(484, 93);
             this.txtpassword.TabIndex = 12;
             this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
@@ -165,9 +164,8 @@ namespace esdaluigi
             this.txtconfermapass.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtconfermapass.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtconfermapass.Location = new System.Drawing.Point(1549, 850);
-            this.txtconfermapass.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtconfermapass.Margin = new System.Windows.Forms.Padding(6);
             this.txtconfermapass.Name = "txtconfermapass";
-            this.txtconfermapass.PasswordChar = '*';
             this.txtconfermapass.Size = new System.Drawing.Size(484, 93);
             this.txtconfermapass.TabIndex = 13;
             // 
@@ -177,7 +175,7 @@ namespace esdaluigi
             this.cmdconferma.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdconferma.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.cmdconferma.Location = new System.Drawing.Point(953, 979);
-            this.cmdconferma.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmdconferma.Margin = new System.Windows.Forms.Padding(6);
             this.cmdconferma.Name = "cmdconferma";
             this.cmdconferma.Size = new System.Drawing.Size(532, 169);
             this.cmdconferma.TabIndex = 16;
@@ -190,7 +188,7 @@ namespace esdaluigi
             this.cmdback.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cmdback.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdback.Location = new System.Drawing.Point(39, 41);
-            this.cmdback.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmdback.Margin = new System.Windows.Forms.Padding(6);
             this.cmdback.Name = "cmdback";
             this.cmdback.Size = new System.Drawing.Size(249, 121);
             this.cmdback.TabIndex = 15;
@@ -216,7 +214,7 @@ namespace esdaluigi
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmreg";
             this.Text = "Registrazione";
             this.ResumeLayout(false);

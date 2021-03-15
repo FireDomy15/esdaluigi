@@ -86,7 +86,7 @@ namespace esdaluigi
             this.cmdins.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdins.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.cmdins.Location = new System.Drawing.Point(373, 734);
-            this.cmdins.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmdins.Margin = new System.Windows.Forms.Padding(6);
             this.cmdins.Name = "cmdins";
             this.cmdins.Size = new System.Drawing.Size(532, 169);
             this.cmdins.TabIndex = 11;
@@ -100,14 +100,14 @@ namespace esdaluigi
             this.txtquant.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtquant.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtquant.Location = new System.Drawing.Point(1172, 210);
-            this.txtquant.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtquant.Margin = new System.Windows.Forms.Padding(6);
             this.txtquant.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.txtquant.Name = "txtquant";
-            this.txtquant.Size = new System.Drawing.Size(488, 74);
+            this.txtquant.Size = new System.Drawing.Size(639, 74);
             this.txtquant.TabIndex = 7;
             this.txtquant.Value = new decimal(new int[] {
             1,
@@ -132,9 +132,9 @@ namespace esdaluigi
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(1172, 78);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(485, 50);
+            this.comboBox1.Size = new System.Drawing.Size(639, 50);
             this.comboBox1.TabIndex = 15;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -145,7 +145,7 @@ namespace esdaluigi
             this.txtprezzo.Location = new System.Drawing.Point(1172, 379);
             this.txtprezzo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.txtprezzo.Name = "txtprezzo";
-            this.txtprezzo.Size = new System.Drawing.Size(488, 58);
+            this.txtprezzo.Size = new System.Drawing.Size(639, 58);
             this.txtprezzo.TabIndex = 16;
             this.txtprezzo.Text = " ";
             // 
@@ -153,10 +153,10 @@ namespace esdaluigi
             // 
             this.txtdesc.BackColor = System.Drawing.SystemColors.ControlDark;
             this.txtdesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdesc.Location = new System.Drawing.Point(1140, 569);
+            this.txtdesc.Location = new System.Drawing.Point(1186, 569);
             this.txtdesc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.txtdesc.Name = "txtdesc";
-            this.txtdesc.Size = new System.Drawing.Size(583, 334);
+            this.txtdesc.Size = new System.Drawing.Size(612, 334);
             this.txtdesc.TabIndex = 17;
             this.txtdesc.Text = " ";
             // 
@@ -174,7 +174,7 @@ namespace esdaluigi
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmprodotti";
             this.Text = "Inserimento Prodotti";
             this.Load += new System.EventHandler(this.frmprodotti_Load);

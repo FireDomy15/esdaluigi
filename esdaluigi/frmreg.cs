@@ -27,7 +27,7 @@ namespace esdaluigi
 
         private void cmdconferma_Click(object sender, EventArgs e)
         {
-            if(txtconfermapass != txtpassword)
+            if (txtconfermapass.Text != txtpassword.Text)
             {
                 MessageBox.Show("Le password non corrispondono");
                 return;
