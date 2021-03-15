@@ -44,9 +44,10 @@ namespace esdaluigi
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(505, 26);
+            this.label1.Location = new System.Drawing.Point(695, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 50);
+            this.label1.Size = new System.Drawing.Size(490, 102);
             this.label1.TabIndex = 0;
             this.label1.Text = "Benvenuto ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -56,9 +57,10 @@ namespace esdaluigi
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(189, 246);
+            this.label2.Location = new System.Drawing.Point(228, 488);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 50);
+            this.label2.Size = new System.Drawing.Size(680, 102);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password utente";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -69,9 +71,10 @@ namespace esdaluigi
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(189, 145);
+            this.label3.Location = new System.Drawing.Point(228, 294);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 50);
+            this.label3.Size = new System.Drawing.Size(437, 102);
             this.label3.TabIndex = 2;
             this.label3.Text = "Username";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -81,9 +84,10 @@ namespace esdaluigi
             this.txtusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtusername.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(668, 145);
+            this.txtusername.Location = new System.Drawing.Point(1186, 294);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(280, 56);
+            this.txtusername.Size = new System.Drawing.Size(560, 111);
             this.txtusername.TabIndex = 3;
             // 
             // txtpass
@@ -91,10 +95,11 @@ namespace esdaluigi
             this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.Location = new System.Drawing.Point(668, 240);
+            this.txtpass.Location = new System.Drawing.Point(1186, 477);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '*';
-            this.txtpass.Size = new System.Drawing.Size(280, 56);
+            this.txtpass.Size = new System.Drawing.Size(560, 111);
             this.txtpass.TabIndex = 4;
             // 
             // label5
@@ -102,9 +107,10 @@ namespace esdaluigi
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(426, 369);
+            this.label5.Location = new System.Drawing.Point(228, 784);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(415, 50);
+            this.label5.Size = new System.Drawing.Size(806, 102);
             this.label5.TabIndex = 6;
             this.label5.Text = "Non sei registrato? ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -114,9 +120,10 @@ namespace esdaluigi
             this.linkreg.AutoSize = true;
             this.linkreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkreg.LinkColor = System.Drawing.Color.Blue;
-            this.linkreg.Location = new System.Drawing.Point(462, 437);
+            this.linkreg.Location = new System.Drawing.Point(268, 912);
+            this.linkreg.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.linkreg.Name = "linkreg";
-            this.linkreg.Size = new System.Drawing.Size(332, 33);
+            this.linkreg.Size = new System.Drawing.Size(648, 67);
             this.linkreg.TabIndex = 7;
             this.linkreg.TabStop = true;
             this.linkreg.Text = "Clicca quì per registrarti!";
@@ -127,9 +134,10 @@ namespace esdaluigi
             this.cmdaccedi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cmdaccedi.Font = new System.Drawing.Font("Mongolian Baiti", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdaccedi.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.cmdaccedi.Location = new System.Drawing.Point(1057, 177);
+            this.cmdaccedi.Location = new System.Drawing.Point(1186, 809);
+            this.cmdaccedi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmdaccedi.Name = "cmdaccedi";
-            this.cmdaccedi.Size = new System.Drawing.Size(256, 83);
+            this.cmdaccedi.Size = new System.Drawing.Size(512, 160);
             this.cmdaccedi.TabIndex = 8;
             this.cmdaccedi.Text = "&ACCEDI";
             this.cmdaccedi.UseVisualStyleBackColor = false;
@@ -137,9 +145,9 @@ namespace esdaluigi
             // 
             // frmbenvenuto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1364, 683);
+            this.ClientSize = new System.Drawing.Size(1859, 1087);
             this.Controls.Add(this.cmdaccedi);
             this.Controls.Add(this.linkreg);
             this.Controls.Add(this.label5);
@@ -148,6 +156,7 @@ namespace esdaluigi
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmbenvenuto";
             this.Text = "Pagina Iniziale Sito";
             this.ResumeLayout(false);

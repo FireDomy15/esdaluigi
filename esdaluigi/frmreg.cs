@@ -53,5 +53,10 @@ namespace esdaluigi
             LOGIN.Show();
             this.Hide();
         }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

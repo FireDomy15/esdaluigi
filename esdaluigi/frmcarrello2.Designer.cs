@@ -45,29 +45,33 @@ namespace esdaluigi
             // label2
             // 
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(200, 44);
             this.label2.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.Size = new System.Drawing.Size(200, 44);
             this.label3.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(200, 44);
             this.label1.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.Size = new System.Drawing.Size(200, 44);
             this.label4.TabIndex = 0;
             // 
             // listView1
@@ -80,9 +84,10 @@ namespace esdaluigi
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 26);
+            this.listView1.Location = new System.Drawing.Point(24, 50);
+            this.listView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(600, 403);
+            this.listView1.Size = new System.Drawing.Size(1885, 1142);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -91,24 +96,29 @@ namespace esdaluigi
             // Nome
             // 
             this.Nome.Text = "Nome";
+            this.Nome.Width = 301;
             // 
             // Descrizione
             // 
             this.Descrizione.Text = "Descrizione";
+            this.Descrizione.Width = 417;
             // 
             // Prezzo
             // 
             this.Prezzo.Text = "Prezzo";
+            this.Prezzo.Width = 252;
             // 
             // Quantità
             // 
             this.Quantità.Text = "Quantità";
+            this.Quantità.Width = 175;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(238, 0);
+            this.button1.Location = new System.Drawing.Point(569, 1243);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(150, 44);
             this.button1.TabIndex = 5;
             this.button1.Text = "aggiungi";
             this.button1.UseVisualStyleBackColor = true;
@@ -116,9 +126,10 @@ namespace esdaluigi
             // 
             // cmdelimina
             // 
-            this.cmdelimina.Location = new System.Drawing.Point(329, 0);
+            this.cmdelimina.Location = new System.Drawing.Point(828, 1243);
+            this.cmdelimina.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cmdelimina.Name = "cmdelimina";
-            this.cmdelimina.Size = new System.Drawing.Size(75, 23);
+            this.cmdelimina.Size = new System.Drawing.Size(150, 44);
             this.cmdelimina.TabIndex = 6;
             this.cmdelimina.Text = "Elimina";
             this.cmdelimina.UseVisualStyleBackColor = true;
@@ -126,10 +137,10 @@ namespace esdaluigi
             // 
             // frmcarrello2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(1924, 1317);
             this.Controls.Add(this.cmdelimina);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
@@ -137,8 +148,9 @@ namespace esdaluigi
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmcarrello2";
-            this.Text = "\\\\";
+            this.Text = "Visualizzazione Carrello";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmcarrello2_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmcarrello2_FormClosed);
             this.Load += new System.EventHandler(this.frmcarrello2_Load);
